@@ -173,6 +173,9 @@ ol[class] {
   background: #f38181;
   margin: 34px auto 62px; }
 
+.services {
+  padding-top: 38px; }
+
 .services__list {
   padding: 0;
   display: flex;
