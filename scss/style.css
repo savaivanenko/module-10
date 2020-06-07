@@ -50,6 +50,10 @@ ol[class] {
   margin: 0;
 }
 
+a {
+  display: block;
+}
+
 .header {
   background-size: cover;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../images/banner-1.jpg);
@@ -398,6 +402,13 @@ ol[class] {
   background-color: #fce38a;
 }
 
+.overlay__item a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 56px;
+}
+
 .overlay__item:not(:last-child) {
   border-right: solid 1px #f38181;
 }
@@ -407,12 +418,15 @@ ol[class] {
   width: 28px;
   height: 28px;
   fill: #f38181;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  vertical-align: middle;
 }
 
 .overlay__item:hover {
   background-color: #f38181;
+}
+
+.overlay__item:hover a {
+  cursor: pointer;
 }
 
 .overlay__item:hover a .team__svg {
